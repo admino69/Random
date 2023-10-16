@@ -1,0 +1,8 @@
+#Project: Hangman game
+
+
+'''
+  O
+ /|\
+ / \
+'''
