@@ -12,7 +12,7 @@ def len_pass():
 
 password_length = len_pass()
 
-pass_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+pass_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!?_"
 
 password = "".join(random.choice(pass_letters) for letter in range(password_length))
 print(password)
