@@ -1,7 +1,5 @@
-#Project: Hangman game
-#Game: Random questions, like guess the fruits. Also show
-#how long the words are. "_ a _ _ _" Maybe with GUI after.
-#maybe hints too, and you will lose a guess if u use a hint
+#use indexes to replace the underscore with the letters
+#also replace the letter with underscore
 import random
 
 print(input('''        
@@ -24,4 +22,15 @@ def random_word():
     random_value = random.choice(categories[random_key])
     return random_value
 
-print(random_word())
+while True:
+    def guess_word():
+        word = random_word
+        user_input = print(input("Guess the word:"))
+        if user_input == word:
+            print("ok")
+        else:
+            print("no, try again")
+
+print(guess_word())
+
+#def if_letter_in():
