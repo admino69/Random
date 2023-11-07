@@ -2,15 +2,6 @@
 #also replace the letter with underscore
 import random
 
-print(input('''        
-____
-|  |
-|  O    Guess the secret word before he gets hanged!
-| /|\\
-| / \\
-
-    
-Would you like to play hangman? Y/N : '''))
 guesses = 0
 guess_limit = 7
 letters = "abcdefghijklmnopqrstuvwxyz"
@@ -30,6 +21,19 @@ while True:
             print("ok")
         else:
             print("no, try again")
+
+play = print(input('''        
+____
+|  |
+|  O    Guess the secret word before he gets hanged!
+| /|\\
+| / \\
+
+Would you like to play hangman? Y/N : '''))
+if play == "yes" and "y":
+    guess_word()
+else:
+    quit()
 
 print(guess_word())
 
