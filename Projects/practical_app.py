@@ -24,6 +24,8 @@ def submit():
 def clear():
     my_entry.delete(0, END)
     my_entry.configure(state=NORMAL)
+#Bug: when clicking clear it only changes the state of the entry, it does not clear it on the first
+# click, you need to click it again to clear it.
 
 my_label = customtkinter.CTkLabel(root, text="")
 my_label.pack(pady=30)
