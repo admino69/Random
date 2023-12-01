@@ -19,13 +19,15 @@ root.geometry('{}x{}+{}+{}'.format(width, height, x, y))
 
 def submit():
     my_label.configure(text=f"Hello {my_entry.get()}")
-    my_entry.configure(state=DISABLED)
+    my_entry.configure(state=NORMAL)
 
 def clear():
     my_entry.delete(0, END)
     my_entry.configure(state=NORMAL)
+    
 #Bug: when clicking clear it only changes the state of the entry, it does not clear it on the first
-# click, you need to click it again to clear it.
+# click, you need to click it again to clear it. But we can just remove the button altogether. User can
+# manually delete.
 
 my_label = customtkinter.CTkLabel(root, text="")
 my_label.pack(pady=30)
@@ -47,9 +49,14 @@ my_entry.pack(pady=20)
 my_button = customtkinter.CTkButton(root, text="Submit", command=submit)
 my_button.pack(pady=10)
 
-#Add 2 CTkEntry for name,pass, Hash name and pass. Create Multiple tabs. 
-#
+#Add 2 CTkEntry for name,pass. Hash name and pass, saved to another file.
+#Create Multiple tabs.
 clear_button = customtkinter.CTkButton(root, text="Clear", command=clear)
 clear_button.pack(pady=5)
+
+tab_1 = customtkinter.CTktab(root, text="Tab", command=)
+tab_1.pack()
+
+
 
 root.mainloop()
