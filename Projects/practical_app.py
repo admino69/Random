@@ -26,7 +26,7 @@ def clear():
     my_entry.configure(state=NORMAL)
 
 my_label = customtkinter.CTkLabel(root, text="")
-my_label.pack(pady=40)
+my_label.pack(pady=30)
 
 creat_name_label = customtkinter.CTkLabel(root,
      text="Created By Adam",
@@ -45,7 +45,9 @@ my_entry.pack(pady=20)
 my_button = customtkinter.CTkButton(root, text="Submit", command=submit)
 my_button.pack(pady=10)
 
+#Add 2 CTkEntry for name,pass, Hash name and pass. Create Multiple tabs. 
+#
 clear_button = customtkinter.CTkButton(root, text="Clear", command=clear)
-clear_button.pack(pady=10)
+clear_button.pack(pady=5)
 
 root.mainloop()
