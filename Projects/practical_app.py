@@ -54,9 +54,5 @@ my_button.pack(pady=10)
 clear_button = customtkinter.CTkButton(root, text="Clear", command=clear)
 clear_button.pack(pady=5)
 
-tab_1 = customtkinter.CTktab(root, text="Tab", command=)
-tab_1.pack()
-
-
 
 root.mainloop()
