@@ -2,7 +2,8 @@ from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN: Final = '7374691864:AAEkP2UbBsEKuKJOeKA8ef9jm0frr1P2LyM'
+#TOKEN HIDDEN SO IT IS NOT EXPOSED.
+TOKEN: Final = ''
 BOT_USERNAME: Final = '@OfficialTradingWizard_bot'
 
 #Commands
