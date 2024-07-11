@@ -1,9 +1,9 @@
 import time
 import rotatescreen as rs
-import getpass
 
-#WARNING: Do not run this on the main computer. I'm not entirelyt sure what it will do, use a VM instead. ---
+
 import os
+import getpass
 USER_NAME = getpass.getuser()
 
 def add_to_startup(file_path=""):
@@ -28,4 +28,4 @@ def rotate_primary_display():
 if __name__ == "__main__":
     rotate_primary_display()
 
-#The code is for educational purposes of course.
+
